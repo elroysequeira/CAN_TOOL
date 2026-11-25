@@ -1,0 +1,32 @@
+# ---- build output (rebuilt with build_exe.bat) ----
+build/
+dist/
+*.spec
+assets/version_info.txt
+
+# ---- the tool's own data: projects, results, CAN recordings, copies of customer files ----
+workspace/
+CANBench_workspace/
+*.asc
+*.jsonl
+
+# ---- customer / company material: never in the repository ----
+samples/
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.bin
+*.srec
+*.s19
+*.hex
+~$*
+
+# ---- python / editor ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+Thumbs.db
