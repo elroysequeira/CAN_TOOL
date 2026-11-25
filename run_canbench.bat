@@ -1,9 +1,9 @@
 @echo off
 rem CANBench launcher - installs missing Python packages on first run, then starts the bench.
 cd /d "%~dp0"
-python -c "import can, cantools" 2>nul
+python -c "import can, cantools, isotp" 2>nul
 if errorlevel 1 (
-  echo Installing required packages ^(python-can, cantools, pyserial, pypdf^)...
+  echo Installing required packages ^(python-can, cantools, can-isotp, pyserial, pypdf^)...
   python -m pip install -r requirements.txt
   if errorlevel 1 (
     echo.
